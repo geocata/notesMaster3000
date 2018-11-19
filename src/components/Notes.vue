@@ -658,9 +658,27 @@ export default {
     .gridItem {
         border: 2px solid #bdbdbd;
         text-align: center;
-        width: 23%;
         cursor: pointer;
         margin-bottom: 3px;
+        overflow: hidden;
+    }
+    
+    @media screen and (min-width: 800px) {
+        .gridItem {
+            width: 23%;
+        }
+    }
+    
+    @media screen and (max-width: 800px) and (min-width: 500px) {
+        .gridItem {
+            width: 45%;
+        }
+    }
+    
+    @media screen and (max-width: 500px) {
+        .gridItem {
+            width: 100%;
+        }
     }
     
     .noteText {
