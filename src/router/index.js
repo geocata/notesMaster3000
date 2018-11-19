@@ -13,6 +13,14 @@ export default new Router({
             meta: {
                 title: 'Notes master 3000'
             }
+        },
+        {
+            path: '/notesMaster3000/',
+            name: 'Notes',
+            component: Index,
+            meta: {
+                title: 'Notes master 3000'
+            }
         }
     ],
     mode: 'history'
